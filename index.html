@@ -1,0 +1,1201 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="resources/files/system/svg/svg1/react.svg" type="image/png" sizes="20x20">
+        <link rel="stylesheet" href="resources/resource/main/css/main.css">
+        <link rel="stylesheet" href="resources/resource/main/css/main-md.css">
+        <link rel="stylesheet" href="resources/resource/main/css/main-xl.css">
+        <link rel="stylesheet" href="resources/resource/main/css/bootstrap.min.css">
+        <script src="resources/resource/main/js/jquery-3.5.1.min.js"></script>
+        <title>fsociety</title>
+    </head>
+    <body class="body">
+        <div id="wrapper">
+            <!-- navigation -->
+                <nav class="navbar fixed-bottom navbar-expand-md navbar-bg-dark navbar-dark">
+                      <a class="navbar-brand toggle-btn front-navbrand">
+                        <img src="resources/files/system/image/logo.jpg" class="nav-logo" id="logo">
+                      </a> 
+
+                      <a class="navbar-brand front-navbrand logonone logoshow">
+                        <img src="resources/files/system/image/wlogo.jpg" class="nav-logo" id="logo">
+                      </a> 
+
+                      <div class="site-head">
+                        <span>КЛОНДАЙК ПРОГРАММИСТА</span>  
+                        <span>ПИРАТСКАЯ БУХТА ДЛЯ РАЗРАБОТЧИКОВ</span>  
+                      </div>
+
+                      <form action="/search" method="POST">
+                        <div class="search-box">
+                            <input type="text" name="search" class="search-txt" placeholder="Что ищем?...вкладки, chrome,psd" title="Разрешено использовать только латинские буквы и цифры">
+                            <a class="search-btn">
+                            <img src="resources/files/system/svg/svg1/search.svg" class="nav-search-icon">
+                            </a>
+                        </div>
+                    </form>
+
+                      <button class="hamburger hamburger--elastic" id="hamburger" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="hamburger-box ">
+                          <div class="hamburger-inner"></div>
+                        </div>
+                      </button>
+
+                      <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav cubic-line ml-auto">
+                            <li> 
+                                <a class="click" href="index.html"> 
+                                <img src="resources/files/system/svg/svg1/react.svg">
+                                </a>
+                            </li>
+                            <li> 
+                                <a class="click" href="article.html"> 
+                                <img src="resources/files/system/svg/svg1/github.svg">
+                                </a>
+                            </li>
+                            <li> 
+                                <a class="click" href="admin/admin.html"> 
+                                <img src="resources/files/system/svg/svg1/slack.svg">
+                                </a>
+                            </li>
+                        </ul>
+                      </div>
+                    </nav>
+            <!-- navigation -->
+            <!-- sidebar -->
+            <div class="sidebar" id="sidebar">
+                <div class="online">
+                    <table>
+                        <thead>
+                            <tr class="online-first-tr">
+                                <th><span class="pulse-1"></span></th>
+                                <th title="interval 5 min">99</th>
+                                <th><span class="pulse-2"></span></th>
+                                <th>701</th>
+                                <th><span class="pulse-3"></span></th>
+                                <th>190101101</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="online-second-tr">
+                                <td></td>
+                                <td>Онлайн</td>
+                                <td></td>
+                                <td>файлов</td>
+                                <td></td>
+                                <td>скачиваний</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cat-head">
+                    <h4>категории</h4>
+                    <hr class="hr-line">
+                </div>
+                <div class="cat" id="category">
+                    <ul class="cat-btn-ul">
+                        <li class="cat-btn-li" data-toggle="collapse" data-target="#collapseOne">
+                            <img src="resources/files/system/svg/svg1/flame.svg" class="cat-img">
+                            <img src="resources/files/system/svg/svg1/flame.svg" class="filter">
+                            <div class="cat-word-box">
+                                <span>КИБЕР</span>
+                                <span>БЕЗОПАСНОСТЬ</span>
+                            </div>
+                            <span class="cat-circle"></span>
+                        </li>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingone" data-parent="#category">
+                            <li class="cat-li"><a class="cat-link">Софт</a><span>Взлом/обходи</span></li>
+                            <li class="cat-li"><a class="cat-link">База данны</a><span>Брут/спам/брут</span></li>
+                        </div>
+                    </ul>
+                    <ul class="cat-btn-ul">
+                        <li class="cat-btn-li" data-toggle="collapse" data-target="#collapsetwo">
+                            <img src="resources/files/system/svg/svg1/windows.svg" class="cat-img">
+                            <img src="resources/files/system/svg/svg1/windows.svg" class="filter">
+                            <div class="cat-word-box">
+                                <span>СОФТ ДЛЯ WINDOWS</span> 
+                            </div>
+                            <span class="cat-circle"></span>
+                        </li>
+                        <div id="collapsetwo" class="collapse" aria-labelledby="headingTwo" data-parent="#category">
+                            <li class="cat-li"><a class="cat-link">Внешний вид  </a> <span>Рабочий стол</span></li>
+                            <li class="cat-li"><a class="cat-link">Медиа</a> <span>Аудио/видео/фото </span></li>
+                            <li class="cat-li"><a class="cat-link">Система</a> <span>Ускорители/Оптимизаторы</span></li>
+                            <li class="cat-li"><a class="cat-link">Безопасность</a> <span>Антивирусы/сканеры</span></li>
+                            <li class="cat-li"><a class="cat-link">Для программиста</a> <span>Редакторы/Эмуляторы</span></li>
+                            <li class="cat-li"><a class="cat-link">Создания игр </a> <span>Движки/Конструкторы</span></li>
+                            <li class="cat-li"><a class="cat-link">Разное</a> <span>Все Остальные</span></li>
+                        </div>
+                    </ul>
+                    <ul class="cat-btn-ul">
+                        <li class="cat-btn-li" data-toggle="collapse" data-target="#collapsethree">
+                            <img src="resources/files/system/svg/svg1/html5.svg" class="cat-img">
+                            <img src="resources/files/system/svg/svg1/html5.svg" class="filter">
+                            <div class="cat-word-box">
+                                <span>РАЗРАБОТЧИКУ</span> 
+                            </div>
+                            <span class="cat-circle"></span>
+                        </li>
+                        <div id="collapsethree" class="collapse" aria-labelledby="headingthree" data-parent="#category">
+                            <li class="cat-li"><a class="cat-link">HTML/CSS</a> <span>Шаблоны</span> </li>
+                            <li class="cat-li"><a class="cat-link">PHP/MYSQL</a> <span>скрипты</span> </li>
+                            <li class="cat-li"><a class="cat-link">JAVASCRIPT</a> <span>Скрипты/эффекты</span> </li>
+                            <li class="cat-li"><a class="cat-link">PSD Макеты</a> <span>Для тренировки</span> </li>
+                            <li class="cat-li"><a class="cat-link">Изображения</a><span>Паки</span></li>
+                            <li class="cat-li"><a class="cat-link">Иконки</a><span>Подборки</span></li>
+                            <li class="cat-li"><a class="cat-link">Шрифты</a><span>Лучшие</span></li>
+                            <li class="cat-li"><a class="cat-link">Мокапы</a><span>для /PHOTOSHOP</span></li>
+                            <li class="cat-li"><a class="cat-link">GFX</a><span>для /PHOTOSHOP</span></li>
+                        </div>
+                    </ul>
+                    <ul class="cat-btn-ul">
+                        <li class="cat-btn-li" data-toggle="collapse" data-target="#collapsefive">
+                            <img src="resources/files/system/svg/svg1/tape.svg" class="cat-img">
+                            <img src="resources/files/system/svg/svg1/tape.svg" class="filter">
+                            <div class="cat-word-box">
+                                <span>КНИГИ</span> 
+                            </div>
+                            <span class="cat-circle"></span>
+                        </li>
+                        <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#category">
+                            <li class="cat-li"><a class="cat-link">Программисту</a><span>Учебники</span></li>
+                            <li class="cat-li"><a class="cat-link">Хакеру</a><span>Литература</span></li>
+                            <li class="cat-li"><a class="cat-link">Разные книги</a><span>Все Остальное </span></li>
+                        </div>
+                    </ul>
+                    <ul class="cat-btn-ul">
+                        <li class="cat-btn-li"> 
+                            <img src="resources/files/system/svg/svg1/category.svg" class="cat-img">
+                            <img src="resources/files/system/svg/svg1/category.svg" class="filter">
+                            <a href="category.html" class="cathref"><span>все категории </span> </a>
+                            <span class="cat-link-circle"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-option">
+                    <a id="signup" class="option">
+                    <img src="resources/files/system/svg/svg1/user.svg">
+                    <span>sign up</span>
+                    </a>
+                    <a id='signin' class="option">
+                    <img src="resources/files/system/svg/svg1/logout.svg">
+                    <span>sign in</span>
+                    </a>
+                </div>
+
+                <div class="sidebar-login-box signupform">
+                  <form action="/signup" method="POST">
+                    <div class="form-signin">
+                      <input type="text" name="login" class="sidebar-login" placeholder="login">
+                    </div>
+                    <div class="form-signin">
+                      <input type="text" name="user_password" class="sidebar-login" placeholder="password">
+                    </div>
+                    <div class="form-signin sign-in-btn-box">
+                      <div class="sign-in-btn-box-inner">
+                        <a> <span>уже есть аккаунт?</span> </a>
+                      </div>
+                      <div class="sign-btn-box">
+                        <button type="submit" class="sign-btn">sign up</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="sidebar-login-box signinform">
+                  <form action="/signin" method="POST">
+                    <div class="form-signin">
+                      <input type="text" name="user_login" class="sidebar-login" placeholder="login">
+                    </div>
+                    <div class="form-signin">
+                      <input type="text" name="user_password" class="sidebar-login" placeholder="password">
+                    </div>
+                    <div class="form-signin sign-in-btn-box">
+                      <div class="sign-in-btn-box-inner">
+                        <a> <span>нет аккаунта?</span> </a>
+                      </div>
+                      <div class="sign-btn-box">
+                        <button type="submit" class="sign-btn">sign in</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+
+                <div class="vote-under">
+                    <hr class="vote-hr-line">
+                </div>
+                <div class="votings">
+                    <div class="votecontent">
+                        <div class="votecontentbox">
+                            <div class="votetext">python or php</div>
+                        </div>
+                        <div class="votesbox">
+                            <div class="votea">
+                                <form class="vote_a" data-id="1">
+                                    <button class="votebtn votea">
+                                    python
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="voteb">
+                                <form class="vote_b" data-id="2">
+                                    <button class="votebtn voteb">
+                                    php
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="voteprogressbox">
+                            <div class="voteaprgbox vboxa">
+                                <span class="voteaprga vboxa" 
+                                    style="width: 70% !important;" >
+                                1913
+                                </span>
+                                <span class="voteaprgaperca">70 %</span>
+                            </div>
+                            <div class="voteaprgbox vboxb">
+                                <span class="voteaprgb vboxb" 
+                                    style="width: 30% !important;">
+                                701
+                                </span>
+                                <span class="voteaprgapercb">30 %</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-under">
+                    <h4>Анонсы</h4>
+                    <hr class="hr-line">
+                </div>
+                <!-- notice -->
+                <div id="wrappernotice">
+                    <div class="notice" id="notice">
+                        <div class="card">
+                            <div class="card-header" id="noticeOne">
+                                <div class="card-header-img-box">
+                                    <img src="resources/files/upload/images/5f9709715d4b8.jpg" class="card-header-img">
+                                </div>
+                                <div class="not-card-header-title-box">
+                                    <a class="not-card-btn" aria-expanded="true">
+                                    <img src="resources/files/upload/images/618d2f7ea67f2.jpg" class="not-card-img">
+                                    </a>
+                                    <div class="not-card-head">
+                                        <span>fsociety</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notice-card-body " aria-labelledby="noticeOne" data-parent="#notice">
+                                <div class="card-body">
+                                    <div class="not-card-content">
+                                        <div class="card-content-head">
+                                            <div>
+                                                <span>21.05.2020</span>
+                                            </div>
+                                            <div class="card-content-title">
+                                                <span>title Lorem ipsum.</span>
+                                                <span>subtitle Lorem ipsum dolor.</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="card-content-inner">
+                                                <span>Никогда не делал игры в 3D, и никогда не работал в Blender. Но сегодня всё изменится ... ;)
+                                                </span>
+                                            </div>
+                                            <div class="card-content-url-box">
+                                                <a class="card-content-url" href="https://www.youtube.com/" >
+                                                <span class="card-content-url-span">https://www.youtube.com/</span>
+                                                </a>
+                                            </div>
+                                            <div  class="notice-card-img-box">
+                                                <img src="resources/files/upload/images/619383cd9d9a3.png" class="notice-card-img">
+                                            </div>
+                                            <hr class="notice-card-img-hr-under">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="orphus">
+                    <img src="resources/files/system/image/orphus.png">
+                </div>
+                <img src="resources/files/system/gif/cote.gif" class="cote2" title="meow :) hello i am Cookie meow">
+            </div>
+            <!-- sidebar -->
+            <div class="wrap">
+                <div class="content section">
+                    <div class="inner-content marpad page-content inner-not-vh">
+                        <!-- content -->
+                        <div class="page-container">
+                            <div class="container-title-box">
+                                <span>НОВЫЕ МАТЕРИАЛЫ</span>
+                                <hr class="page-hr">
+                            </div>
+
+                            <!-- block -->
+                            <div class="block">
+                                <div class="card">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-5">
+                                            <div class="card_image_box">
+                                                <img src="resources/files/upload/images/article (0).jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card_content">
+                                                <div class="card_body">
+                                                    <div class="card_head">
+                                                        <div>
+                                                            <a href="article.html" class="card_title">atom text editor</a>
+                                                        </div>
+                                                        <div class="card_head_info">
+                                                            <div class="box">
+                                                                <span>20.06.22</span>
+                                                            </div>
+                                                            <div class="box">
+                                                                <span>
+                                                                    <img src="resources/files/system/svg/svg1/flame.svg">
+                                                                    <img src="resources/files/system/svg/svg1/flame.svg">
+                                                                </span>
+                                                                <span>category</span>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div>
+                                                                    <span>
+                                                                        <img src="resources/files/system/svg/svg1/down.svg">
+                                                                    </span>
+                                                                    <span class="levin">190101</span>
+                                                                    <span>скачиваний</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card_text_box">
+                                                        <span>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Fugit quis quas illum consectetur provident sunt aperiam fuga fugiat veniam veritatis. In fugit, cumque nostrum at sunt natus. Et, odit, rerum.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card_footer">
+                                                    <div class="card_button_group">
+                                                        <a>скачать <span>175 MB</span></a>
+                                                        <a href="article.html">подробное</a>
+                                                    </div>
+                                                    <!--  -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-5">
+                                            <div class="card_image_box">
+                                                <img src="resources/files/upload/images/article (1).jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card_content">
+                                                <div class="card_body">
+                                                    <div class="card_head">
+                                                        <div>
+                                                            <a href="article.html" class="card_title">atom text editor</a>
+                                                        </div>
+                                                        <div class="card_head_info">
+                                                            <div class="box">
+                                                                <span>20.06.22</span>
+                                                            </div>
+                                                            <div class="box">
+                                                                <span>
+                                                                    <img src="resources/files/system/svg/svg1/flame.svg">
+                                                                    <img src="resources/files/system/svg/svg1/flame.svg">
+                                                                </span>
+                                                                <span>category</span>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div>
+                                                                    <span>
+                                                                        <img src="resources/files/system/svg/svg1/down.svg">
+                                                                    </span>
+                                                                    <span class="levin">190101</span>
+                                                                    <span>скачиваний</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card_text_box">
+                                                        <span>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Fugit quis quas illum consectetur provident sunt aperiam fuga fugiat veniam veritatis. In fugit, cumque nostrum at sunt natus. Et, odit, rerum.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card_footer">
+                                                    <div class="card_button_group">
+                                                        <div class="card_button_group">
+                                                            <A>скачать <span>175 MB</span></A>
+                                                            <A href="article.html">подробное</A>
+                                                        </div>
+                                                    </div>
+                                                    <!--  -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-5">
+                                            <div class="card_image_box">
+                                                <img src="resources/files/upload/images/article (2).jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card_content">
+                                                <div class="card_body">
+                                                    <div class="card_head">
+                                                        <div>
+                                                            <a href="article.html" class="card_title">atom text editor</a>
+                                                        </div>
+                                                        <div class="card_head_info">
+                                                            <div class="box">
+                                                                <span>20.06.22</span>
+                                                            </div>
+                                                            <div class="box">
+                                                                <span>
+                                                                    <img src="resources/files/system/svg/svg1/flame.svg">
+                                                                    <img src="resources/files/system/svg/svg1/flame.svg">
+                                                                </span>
+                                                                <span>category</span>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div>
+                                                                    <span>
+                                                                        <img src="resources/files/system/svg/svg1/down.svg">
+                                                                    </span>
+                                                                    <span class="levin">190101</span>
+                                                                    <span>скачиваний</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card_text_box">
+                                                        <span>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Fugit quis quas illum consectetur provident sunt aperiam fuga fugiat veniam veritatis. In fugit, cumque nostrum at sunt natus. Et, odit, rerum.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card_footer">
+                                                    <div class="card_button_group">
+                                                        <div class="card_button_group">
+                                                            <A>скачать <span>175 MB</span></A>
+                                                            <A href="article.html">подробное</A>
+                                                        </div>
+                                                    </div>
+                                                    <!--  -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-5">
+                                            <div class="card_image_box">
+                                                <img src="resources/files/upload/images/article (3).jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card_content">
+                                                <div class="card_body">
+                                                    <div class="card_head">
+                                                        <div>
+                                                            <a href="article.html" class="card_title">atom text editor</a>
+                                                        </div>
+                                                        <div class="card_head_info">
+                                                            <div class="box">
+                                                                <span>20.06.22</span>
+                                                            </div>
+                                                            <div class="box">
+                                                                <span>
+                                                                    <img src="resources/files/system/svg/svg1/flame.svg">
+                                                                    <img src="resources/files/system/svg/svg1/flame.svg">
+                                                                </span>
+                                                                <span>category</span>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div>
+                                                                    <span>
+                                                                        <img src="resources/files/system/svg/svg1/down.svg">
+                                                                    </span>
+                                                                    <span class="levin">190101</span>
+                                                                    <span>скачиваний</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card_text_box">
+                                                        <span>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Fugit quis quas illum consectetur provident sunt aperiam fuga fugiat veniam veritatis. In fugit, cumque nostrum at sunt natus. Et, odit, rerum.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card_footer">
+                                                    <div class="card_button_group">
+                                                        <div class="card_button_group">
+                                                            <A>скачать <span>175 MB</span></A>
+                                                            <A href="article.html">подробное</A>
+                                                        </div>
+                                                    </div>
+                                                    <!--  -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-5">
+                                            <div class="card_image_box">
+                                                <img src="resources/files/upload/images/article (4).jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card_content">
+                                                <div class="card_body">
+                                                    <div class="card_head">
+                                                        <div>
+                                                            <a href="article.html" class="card_title">atom text editor</a>
+                                                        </div>
+                                                        <div class="card_head_info">
+                                                            <div class="box">
+                                                                <span>20.06.22</span>
+                                                            </div>
+                                                            <div class="box">
+                                                                <span>
+                                                                    <img src="resources/files/system/svg/svg1/flame.svg">
+                                                                    <img src="resources/files/system/svg/svg1/flame.svg">
+                                                                </span>
+                                                                <span>category</span>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div>
+                                                                    <span>
+                                                                        <img src="resources/files/system/svg/svg1/down.svg">
+                                                                    </span>
+                                                                    <span class="levin">190101</span>
+                                                                    <span>скачиваний</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card_text_box">
+                                                        <span>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Fugit quis quas illum consectetur provident sunt aperiam fuga fugiat veniam veritatis. In fugit, cumque nostrum at sunt natus. Et, odit, rerum.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card_footer">
+                                                    <div class="card_button_group">
+                                                        <div class="card_button_group">
+                                                            <A>скачать <span>175 MB</span></A>
+                                                            <A href="article.html">подробное</A>
+                                                        </div>
+                                                    </div>
+                                                    <!--  -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                
+                                <div class="card">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-5">
+                                            <div class="card_image_box">
+                                                <img src="resources/files/upload/images/article (5).jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card_content">
+                                                <div class="card_body">
+                                                    <div class="card_head">
+                                                        <div>
+                                                            <a href="article.html" class="card_title">atom text editor</a>
+                                                        </div>
+                                                        <div class="card_head_info">
+                                                            <div class="box">
+                                                                <span>20.06.22</span>
+                                                            </div>
+                                                            <div class="box">
+                                                                <span>
+                                                                    <img src="resources/files/system/svg/svg1/flame.svg">
+                                                                    <img src="resources/files/system/svg/svg1/flame.svg">
+                                                                </span>
+                                                                <span>category</span>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div>
+                                                                    <span>
+                                                                        <img src="resources/files/system/svg/svg1/down.svg">
+                                                                    </span>
+                                                                    <span class="levin">190101</span>
+                                                                    <span>скачиваний</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card_text_box">
+                                                        <span>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Fugit quis quas illum consectetur provident sunt aperiam fuga fugiat veniam veritatis. In fugit, cumque nostrum at sunt natus. Et, odit, rerum.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card_footer">
+                                                    <div class="card_button_group">
+                                                        <div class="card_button_group">
+                                                            <A>скачать <span>175 MB</span></A>
+                                                            <A href="article.html">подробное</A>
+                                                        </div>
+                                                    </div>
+                                                    <!--  -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            
+                                <div class="card">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-5">
+                                            <div class="card_image_box">
+                                                <img src="resources/files/upload/images/article (6).jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card_content">
+                                                <div class="card_body">
+                                                    <div class="card_head">
+                                                        <div>
+                                                            <a href="article.html" class="card_title">atom text editor</a>
+                                                        </div>
+                                                        <div class="card_head_info">
+                                                            <div class="box">
+                                                                <span>20.06.22</span>
+                                                            </div>
+                                                            <div class="box">
+                                                                <span>
+                                                                    <img src="resources/files/system/svg/svg1/flame.svg">
+                                                                    <img src="resources/files/system/svg/svg1/flame.svg">
+                                                                </span>
+                                                                <span>category</span>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div>
+                                                                    <span>
+                                                                        <img src="resources/files/system/svg/svg1/down.svg">
+                                                                    </span>
+                                                                    <span class="levin">190101</span>
+                                                                    <span>скачиваний</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card_text_box">
+                                                        <span>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Fugit quis quas illum consectetur provident sunt aperiam fuga fugiat veniam veritatis. In fugit, cumque nostrum at sunt natus. Et, odit, rerum.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card_footer">
+                                                    <div class="card_button_group">
+                                                        <div class="card_button_group">
+                                                            <A>скачать <span>175 MB</span></A>
+                                                            <A href="article.html">подробное</A>
+                                                        </div>
+                                                    </div>
+                                                    <!--  -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="card">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-5">
+                                            <div class="card_image_box">
+                                                <img src="resources/files/upload/images/article (7).jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card_content">
+                                                <div class="card_body">
+                                                    <div class="card_head">
+                                                        <div>
+                                                            <a href="article.html" class="card_title">atom text editor</a>
+                                                        </div>
+                                                        <div class="card_head_info">
+                                                            <div class="box">
+                                                                <span>20.06.22</span>
+                                                            </div>
+                                                            <div class="box">
+                                                                <span>
+                                                                    <img src="resources/files/system/svg/svg1/flame.svg">
+                                                                    <img src="resources/files/system/svg/svg1/flame.svg">
+                                                                </span>
+                                                                <span>category</span>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div>
+                                                                    <span>
+                                                                        <img src="resources/files/system/svg/svg1/down.svg">
+                                                                    </span>
+                                                                    <span class="levin">190101</span>
+                                                                    <span>скачиваний</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card_text_box">
+                                                        <span>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Fugit quis quas illum consectetur provident sunt aperiam fuga fugiat veniam veritatis. In fugit, cumque nostrum at sunt natus. Et, odit, rerum.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card_footer">
+                                                    <div class="card_button_group">
+                                                        <div class="card_button_group">
+                                                            <A>скачать <span>175 MB</span></A>
+                                                            <A href="article.html">подробное</A>
+                                                        </div>
+                                                    </div>
+                                                    <!--  -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                
+                                <div class="card">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-5">
+                                            <div class="card_image_box">
+                                                <img src="resources/files/upload/images/article (8).jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card_content">
+                                                <div class="card_body">
+                                                    <div class="card_head">
+                                                        <div>
+                                                            <a href="article.html" class="card_title">atom text editor</a>
+                                                        </div>
+                                                        <div class="card_head_info">
+                                                            <div class="box">
+                                                                <span>20.06.22</span>
+                                                            </div>
+                                                            <div class="box">
+                                                                <span>
+                                                                    <img src="resources/files/system/svg/svg1/flame.svg">
+                                                                    <img src="resources/files/system/svg/svg1/flame.svg">
+                                                                </span>
+                                                                <span>category</span>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div>
+                                                                    <span>
+                                                                        <img src="resources/files/system/svg/svg1/down.svg">
+                                                                    </span>
+                                                                    <span class="levin">190101</span>
+                                                                    <span>скачиваний</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card_text_box">
+                                                        <span>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Fugit quis quas illum consectetur provident sunt aperiam fuga fugiat veniam veritatis. In fugit, cumque nostrum at sunt natus. Et, odit, rerum.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card_footer">
+                                                    <div class="card_button_group">
+                                                        <div class="card_button_group">
+                                                            <A>скачать <span>175 MB</span></A>
+                                                            <A href="article.html">подробное</A>
+                                                        </div>
+                                                    </div>
+                                                    <!--  -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- block -->
+                            
+                             <!-- paginator -->
+                            <section id="paginator">
+                                <div class="title_box">
+                                    <span>страницы</span>
+                                    <hr>
+                                </div>
+                                <div class="paginator_box">
+                                    <a href="#">НАЧАЛО</a>
+                                    <a>&#171</a>
+                                    <a href="#" class="current">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#">6</a>
+                                    <a href="#">7</a>
+                                    <a href="#">8</a>
+                                    <a href="#">9</a>
+                                    <a>&#187</a>
+                                    <a href="#">КОНЕЦ</a>
+                               </div>
+                            </section>
+                            <!-- paginator -->
+
+                        </div>
+                        <!-- content -->
+                    </div>
+                </div>
+                <!-- section sidebar -->
+                <section class="section-sidebar">
+                    <div class="online">
+                        <table>
+                            <thead>
+                                <tr class="online-first-tr">
+                                    <th><span class="pulse-1"></span></th>
+                                    <th title="interval 5 min">99</th>
+                                    <th><span class="pulse-2"></span></th>
+                                    <th>701</th>
+                                    <th><span class="pulse-3"></span></th>
+                                    <th>190101101</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="online-second-tr">
+                                    <td></td>
+                                    <td>Онлайн</td>
+                                    <td></td>
+                                    <td>файлов</td>
+                                    <td></td>
+                                    <td>скачиваний</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="cat-head">
+                        <h4>категории</h4>
+                        <hr class="hr-line">
+                    </div>
+                    <div class="cat" id="section-category">
+                        <ul class="cat-btn-ul">
+                            <li class="cat-btn-li" data-toggle="collapse" data-target="#section-collapseOne">
+                                <img src="resources/files/system/svg/svg1/flame.svg" class="cat-img">
+                                <img src="resources/files/system/svg/svg1/flame.svg" class="filter">
+                                <div class="cat-word-box">
+                                    <span>КИБЕР</span>
+                                    <span>БЕЗОПАСНОСТЬ</span>
+                                </div>
+                                <span class="cat-circle"></span>
+                            </li>
+                            <div id="section-collapseOne" class="collapse" aria-labelledby="headingone" data-parent="#section-category">
+                                <li class="cat-li"><a class="cat-link">Софт</a><span>Взлом/обходи</span></li>
+                                <li class="cat-li"><a class="cat-link">База данны</a><span>Брут/спам/брут</span></li>
+                            </div>
+                        </ul>
+                        <ul class="cat-btn-ul">
+                            <li class="cat-btn-li" data-toggle="collapse" data-target="#section-collapsetwo">
+                                <img src="resources/files/system/svg/svg1/windows.svg" class="cat-img">
+                                <img src="resources/files/system/svg/svg1/windows.svg" class="filter">
+                                <div class="cat-word-box">
+                                    <span>СОФТ ДЛЯ WINDOWS</span> 
+                                </div>
+                                <span class="cat-circle"></span>
+                            </li>
+                            <div id="section-collapsetwo" class="collapse" aria-labelledby="headingTwo" data-parent="#section-category">
+                                <li class="cat-li"><a class="cat-link">Внешний вид  </a> <span>Рабочий стол</span></li>
+                                <li class="cat-li"><a class="cat-link">Медиа</a> <span>Аудио/видео/фото </span></li>
+                                <li class="cat-li"><a class="cat-link">Система</a> <span>Ускорители/Оптимизаторы</span></li>
+                                <li class="cat-li"><a class="cat-link">Безопасность</a> <span>Антивирусы/сканеры</span></li>
+                                <li class="cat-li"><a class="cat-link">Для программиста</a> <span>Редакторы/Эмуляторы</span></li>
+                                <li class="cat-li"><a class="cat-link">Создания игр </a> <span>Движки/Конструкторы</span></li>
+                                <li class="cat-li"><a class="cat-link">Разное</a> <span>Все Остальные</span></li>
+                            </div>
+                        </ul>
+                        <ul class="cat-btn-ul">
+                            <li class="cat-btn-li" data-toggle="collapse" data-target="#section-collapsethree">
+                                <img src="resources/files/system/svg/svg1/html5.svg" class="cat-img">
+                                <img src="resources/files/system/svg/svg1/html5.svg" class="filter">
+                                <div class="cat-word-box">
+                                    <span>РАЗРАБОТЧИКУ</span> 
+                                </div>
+                                <span class="cat-circle"></span>
+                            </li>
+                            <div id="section-collapsethree" class="collapse" aria-labelledby="headingthree" data-parent="#section-category">
+                                <li class="cat-li"><a class="cat-link">HTML/CSS</a> <span>Шаблоны</span> </li>
+                                <li class="cat-li"><a class="cat-link">PHP/MYSQL</a> <span>скрипты</span> </li>
+                                <li class="cat-li"><a class="cat-link">JAVASCRIPT</a> <span>Скрипты/эффекты</span> </li>
+                                <li class="cat-li"><a class="cat-link">PSD Макеты</a> <span>Для тренировки</span> </li>
+                                <li class="cat-li"><a class="cat-link">Изображения</a><span>Паки</span></li>
+                                <li class="cat-li"><a class="cat-link">Иконки</a><span>Подборки</span></li>
+                                <li class="cat-li"><a class="cat-link">Шрифты</a><span>Лучшие</span></li>
+                                <li class="cat-li"><a class="cat-link">Мокапы</a><span>для /PHOTOSHOP</span></li>
+                                <li class="cat-li"><a class="cat-link">GFX</a><span>для /PHOTOSHOP</span></li>
+                            </div>
+                        </ul>
+                        <ul class="cat-btn-ul">
+                            <li class="cat-btn-li" data-toggle="collapse" data-target="#section-collapsefive">
+                                <img src="resources/files/system/svg/svg1/tape.svg" class="cat-img">
+                                <img src="resources/files/system/svg/svg1/tape.svg" class="filter">
+                                <div class="cat-word-box">
+                                    <span>КНИГИ</span> 
+                                </div>
+                                <span class="cat-circle"></span>
+                            </li>
+                            <div id="section-collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#section-category">
+                                <li class="cat-li"><a class="cat-link">Программисту</a><span>Учебники</span></li>
+                                <li class="cat-li"><a class="cat-link">Хакеру</a><span>Литература</span></li>
+                                <li class="cat-li"><a class="cat-link">Разные книги</a><span>Все Остальное </span></li>
+                            </div>
+                        </ul>
+                        <ul class="cat-btn-ul">
+                            <li class="cat-btn-li"> 
+                                <img src="resources/files/system/svg/svg1/category.svg" class="cat-img">
+                                <img src="resources/files/system/svg/svg1/category.svg" class="filter">
+                                <a href="category.html" class="cathref"><span>все категории </span> </a>
+                                <span class="cat-link-circle"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-option">
+                        <a id="signup" class="option">
+                        <img src="resources/files/system/svg/svg1/user.svg">
+                        <span>sign up</span>
+                        </a>
+                        <a id='signin' class="option">
+                        <img src="resources/files/system/svg/svg1/logout.svg">
+                        <span>sign in</span>
+                        </a>
+                    </div>
+                    <div class="vote-under">
+                        <hr class="vote-hr-line">
+                    </div>
+                    <div class="votings">
+                        <div class="votecontent">
+                            <div class="votecontentbox">
+                                <div class="votetext">python or php</div>
+                            </div>
+                            <div class="votesbox">
+                                <div class="votea">
+                                    <form class="vote_a" data-id="1">
+                                        <button class="votebtn votea">
+                                        python
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="voteb">
+                                    <form class="vote_b" data-id="2">
+                                        <button class="votebtn voteb">
+                                        php
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="voteprogressbox">
+                                <div class="voteaprgbox vboxa">
+                                    <span class="voteaprga vboxa" 
+                                        style="width: 70% !important;" >
+                                    1913
+                                    </span>
+                                    <span class="voteaprgaperca">70 %</span>
+                                </div>
+                                <div class="voteaprgbox vboxb">
+                                    <span class="voteaprgb vboxb" 
+                                        style="width: 30% !important;">
+                                    701
+                                    </span>
+                                    <span class="voteaprgapercb">30 %</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- chat -->
+                    <div class="chat-content" style="height: 500px;">
+                        <div class="chat-content-box">
+                            <div class="chat-container">
+                                <div class="chat-container-img-box">
+                                    <img src="resources/files/upload/images/user.jpg" class="chat-person-img">
+                                </div>
+                                <div class="chat-container-box">
+                                    <div class="chat-container-box-inner">
+                                        <span style="color: yellow !important;">lunatic</span>
+                                        <span>20.06.22</span>
+                                    </div>
+                                    <div class="chat-container-msg">
+                                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, soluta!</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-container">
+                                <div class="chat-container-img-box">
+                                    <img src="resources/files/upload/images/user.jpg" class="chat-person-img">
+                                </div>
+                                <div class="chat-container-box">
+                                    <div class="chat-container-box-inner">
+                                        <span style="color: yellow !important;">lunatic</span>
+                                        <span>20.06.22</span>
+                                    </div>
+                                    <div class="chat-container-msg">
+                                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, soluta!</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-container">
+                                <div class="chat-container-img-box">
+                                    <img src="resources/files/upload/images/user.jpg" class="chat-person-img">
+                                </div>
+                                <div class="chat-container-box">
+                                    <div class="chat-container-box-inner">
+                                        <span style="color: yellow !important;">lunatic</span>
+                                        <span>20.06.22</span>
+                                    </div>
+                                    <div class="chat-container-msg">
+                                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, soluta!</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-container">
+                                <div class="chat-container-img-box">
+                                    <img src="resources/files/upload/images/user.jpg" class="chat-person-img">
+                                </div>
+                                <div class="chat-container-box">
+                                    <div class="chat-container-box-inner">
+                                        <span style="color: yellow !important;">lunatic</span>
+                                        <span>20.06.22</span>
+                                    </div>
+                                    <div class="chat-container-msg">
+                                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, soluta!</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-area-box">
+                            <div class="chat-area">
+                                <form class="chat-form">
+                                    <textarea name="chat_message" minlength="2" maxlength="300" placeholder="напишите сообщения" required></textarea>
+                                    <div class="chat-send-btn">
+                                        <img src="resources/files/system/svg/svg1/send.png">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- chat -->
+
+                    <div class="cat-under">
+                        <h4>Анонсы </h4>
+                        <hr class="hr-line">
+                    </div>
+                    <div id="sidewrappernotice">
+                        <div class="notice" id="notice">
+                            <div class="card">
+                                <div class="card-header" id="noticesectionone">
+                                    <div class="card-header-img-box">
+                                        <img src="resources/files/upload/images/5f9709715d4b8.jpg" class="card-header-img">
+                                    </div>
+                                    <div class="not-card-header-title-box">
+                                        <a class="not-card-btn" aria-expanded="true">
+                                        <img src="resources/files/upload/images/618d2f7ea67f2.jpg" class="not-card-img">
+                                        </a>
+                                        <div class="not-card-head">
+                                            <span>Syphilis</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="notice-card-body" aria-labelledby="noticesectionone" data-parent="#notice">
+                                    <div class="card-body">
+                                        <div class="not-card-content">
+                                            <div class="card-content-head">
+                                                <div>
+                                                    <span>21.05.2020</span>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="card-content">
+                                                <div class="card-content-inner">
+                                                    <span>Никогда не делал игры в 3D, и никогда не работал в Blender. Но сегодня всё изменится ... ;)
+                                                    </span>
+                                                </div>
+                                                <div class="card-content-url-box">
+                                                    <a class="card-content-url" href="https://www.youtube.com/">
+                                                        <span >https://www.youtube.com/</span>
+                                                    </a>
+                                                </div>
+                                                <div  class="notice-card-img-box">
+                                                    <img src="resources/files/upload/images/619383cd9d9a3.png" class="notice-card-img">
+                                                </div>
+                                                <hr class="notice-card-img-hr-under">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orphus">
+                        <img src="resources/files/system/image/orphus.png">
+                    </div>
+                    <img src="resources/files/system/gif/cote.gif" class="cote" title="meow :) hello i am Cookie">
+                </section>
+                <!-- section sidebar -->
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-upper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="inner-footer-col-up">
+                                <div class="footer-brand">
+                                    <div class="footer-brand-left">
+                                        <img src="resources/files/system/svg/svg1/react.svg" class="footer-brand-logo">
+                                    </div>
+                                    <div class="footer-brand-right">
+                                        <span>КЛОНДАЙК ПРОГРАММИСТА</span>
+                                        <span>ПИРАТСКАЯ БУХТА ДЛЯ РАЗРАБОТЧИКОВ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-footer-col-up-under">
+                                <span class="footer-down-txt">Проект «Клондайк Программиста» создан с целью коллекционирования наиболее интересных материалов из различных сфер деятельности. Мы не преследуем цель незаконного распространения материалов, поэтому если Вы являетесь правообладателем, сообщите нам о нарушении по указанным здесь контактам.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-lower">
+                <div class="footer-link-btn-box">
+                    <a class="footer-link" href="https://github.com/190101101"> 
+                        <img src="resources/files/system/svg/svg1/github.svg" class="footer-link-btn-svg"> 
+                    </a>
+                    <a class="footer-link" href="https://www.youtube.com/channel/UCXj-ksNh-FcQsMSJ0MGN87w/featured"> 
+                        <img src="resources/files/system/svg/svg1/youtube.svg" class="footer-link-btn-svg"> 
+                    </a>
+                    <a class="footer-link" href="https://www.instagram.com/o190101101"> 
+                        <img src="resources/files/system/svg/svg1/instagram.png" class="footer-link-btn-svg"> 
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+        <!-- js -->
+        <script src="resources/resource/main/js/bootstrap.min.js"></script>
+        <script src="resources/resource/main/js/popper.min.js"></script>
+        <script src="resources/resource/main/bower/jquery.min.js"></script>
+        <script src="resources/resource/main/bower/bootstrap.min.js"></script>
+        <script src="resources/resource/main/js/main.js"></script>
+        <!-- js -->
+    </body>
+</html>
+

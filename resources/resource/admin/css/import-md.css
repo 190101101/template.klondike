@@ -1,0 +1,10 @@
+@media screen and (min-width: 0px) and (max-width: 340px) {
+    
+    .navbar-nav>li {
+        padding: 0 5px;
+    }
+
+    .navbar-nav>li a img{
+        width: 20px
+    }
+}
